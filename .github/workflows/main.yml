@@ -69,6 +69,11 @@ jobs:
                        +boeffla_wl_blocker       \
                        +fp_boost                 \
                        +mass_storage             \
+                       +kvm                      \
+                       +usb_serial               \
+                       +performance              \
+                       +kexec                    \
+                       +reiser4                  \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
