@@ -50,6 +50,7 @@ jobs:
             ccache-${{ env.TOOLCHAIN }}-${{ steps.ccache_model_key.outputs.KEY }}-
             ccache-${{ env.TOOLCHAIN }}-
 
+
       - name: Kernel Configure
         run: |
           set -e -o pipefail
@@ -68,7 +69,7 @@ jobs:
                        +morosound                \
                        +boeffla_wl_blocker       \
                        +fp_boost                 \
-                       ++mass_storage            \
+                       +mass_storage             \
                        +kvm                      \
                        +usb_serial               \
                        +performance              \
