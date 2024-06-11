@@ -73,9 +73,7 @@ jobs:
                        +usb_serial               \
                        +performance              \
                        +kexec                    \
-                       +reiser4                  \
-                       +io_zen                   \                        
-                       +tcp_cubic                \
+                       +reiser4                  \                     
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
